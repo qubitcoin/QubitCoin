@@ -19,9 +19,9 @@ public:
      */
     enum Unit
     {
-        QBT,
-        cQBT,
-        mQBT
+        Q2C,
+        cQ2C,
+        mQ2C
     };
 
     //! @name Static API

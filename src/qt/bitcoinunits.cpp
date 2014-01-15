@@ -11,9 +11,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(QBT);
-    unitlist.append(cQBT);
-    unitlist.append(mQBT);
+    unitlist.append(Q2C);
+    unitlist.append(cQ2C);
+    unitlist.append(mQ2C);
     return unitlist;
 }
 
@@ -21,9 +21,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case QBT:
-    case cQBT:
-    case mQBT:
+    case Q2C:
+    case cQ2C:
+    case mQ2C:
         return true;
     default:
         return false;
@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case QBT: return QString("QBT");
-    case cQBT: return QString("cQBT");
-    case mQBT: return QString("mQBT");
+    case Q2C: return QString("Q2C");
+    case cQ2C: return QString("cQ2C");
+    case mQ2C: return QString("mQ2C");
     default: return QString("???");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case QBT: return QString("Qubits");
-    case cQBT: return QString("Centum-Qubits (1 / 100)");
-    case mQBT: return QString("Milli-Qubits (1 / 1,000)");
+    case Q2C: return QString("Qubits");
+    case cQ2C: return QString("Centum-Qubits (1 / 100)");
+    case mQ2C: return QString("Milli-Qubits (1 / 1,000)");
     default: return QString("???");
     }
 }
@@ -56,9 +56,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case QBT:  return 100000;
-    case cQBT: return 1000;
-    case mQBT: return 100;
+    case Q2C:  return 100000;
+    case cQ2C: return 1000;
+    case mQ2C: return 100;
     default:   return 100000;
     }
 }
@@ -67,9 +67,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case QBT: return 17; // trillions (# digits, without commas)
-    case cQBT: return 19; // *100
-    case mQBT: return 20; // *1,000
+    case Q2C: return 17; // trillions (# digits, without commas)
+    case cQ2C: return 19; // *100
+    case mQ2C: return 20; // *1,000
     default: return 0;
     }
 }
@@ -78,9 +78,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case QBT: return 5;
-    case cQBT: return 3;
-    case mQBT: return 2;
+    case Q2C: return 5;
+    case cQ2C: return 3;
+    case mQ2C: return 2;
     default: return 0;
     }
 }

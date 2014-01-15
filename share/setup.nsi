@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.8.3.6
 !define COMPANY "Qubit project"
-!define URL http://www.QBT.cc/
+!define URL http://www.Q2C.cc/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
