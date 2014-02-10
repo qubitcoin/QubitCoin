@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case Q2C: return QString("Qubits");
-    case cQ2C: return QString("Centum-Qubits (1 / 100)");
-    case mQ2C: return QString("Milli-Qubits (1 / 1,000)");
+    case Q2C: return QString("QubitCoin");
+    case cQ2C: return QString("Centum-QubitCoin (1 / 100)");
+    case mQ2C: return QString("Milli-QubitCoin (1 / 1,000)");
     default: return QString("???");
     }
 }
