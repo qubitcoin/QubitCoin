@@ -100,7 +100,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("Qubit-core", psz).toStdString();
+    return QCoreApplication::translate("QubitCoin-core", psz).toStdString();
 }
 
 /* Handle runaway exceptions. Shows a message box with the problem and quits the program.
@@ -108,7 +108,7 @@ static std::string Translate(const char* psz)
 static void handleRunawayException(std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Qubit can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. QubitCoin can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
     exit(1);
 }
 
@@ -142,7 +142,7 @@ int main(int argc, char *argv[])
     {
         // This message can not be translated, as translation is not initialized yet
         // (which not yet possible because lang=XX can be overridden in QubitCoin.conf in the data directory)
-        QMessageBox::critical(0, "Qubit",
+        QMessageBox::critical(0, "QubitCoin",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -150,12 +150,12 @@ int main(int argc, char *argv[])
 
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
-    QApplication::setOrganizationName("Qubit");
-    QApplication::setOrganizationDomain("Qubit.org");
+    QApplication::setOrganizationName("QubitCoin");
+    QApplication::setOrganizationDomain("q2c.cc");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        QApplication::setApplicationName("Qubit-Qt-testnet");
+        QApplication::setApplicationName("QubitCoin-Qt-testnet");
     else
-        QApplication::setApplicationName("Qubit-Qt");
+        QApplication::setApplicationName("QubitCoin-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
@@ -275,7 +275,7 @@ int main(int argc, char *argv[])
                 window.removeAllWallets();
                 guiref = 0;
             }
-            // Shutdown the core and its threads, but don't exit Qubit-Qt here
+            // Shutdown the core and its threads, but don't exit QubitCoin-Qt here
             threadGroup.interrupt_all();
             threadGroup.join_all();
             Shutdown();
