@@ -1192,6 +1192,9 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+    // added by mine-pool.net for test only :)
+    {'s-seed.mine-pool.net', 's-seed.mine-pool.net'}, // test static dns seeds
+    {'q2c-seed.mine-pool.net', 'q2c-seed.mine-pool.net'}, // test dynamic dns seeds
     {NULL, NULL}
 };
 
