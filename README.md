@@ -27,7 +27,7 @@ You need the Qt4 run-time libraries to run QubitCoin-Qt. On Debian or Ubuntu:
 
 Other Pages
 ---------------------
-- [Unix Build Notes](build-unix.md)
+- [Unix Build Notes](doc/build-unix.md)
 - [OSX Build Notes](build-osx.md)
 - [Windows Build Notes](build-msw.md)
 - [Coding Guidelines](coding.md)
