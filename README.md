@@ -1,8 +1,8 @@
-QubitCoin 0.8.3 BETA
+QubitCoin 0.8.3.1 BETA
 ====================
 
 Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2013 QubitCoin Developers
+Copyright (c) 2014 QubitCoin Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -28,11 +28,11 @@ You need the Qt4 run-time libraries to run QubitCoin-Qt. On Debian or Ubuntu:
 Other Pages
 ---------------------
 - [Unix Build Notes](doc/build-unix.md)
-- [OSX Build Notes](build-osx.md)
-- [Windows Build Notes](build-msw.md)
-- [Coding Guidelines](coding.md)
-- [Release Process](release-process.md)
-- [Release Notes](release-notes.md)
-- [Multiwallet Qt Development](multiwallet-qt.md)
-- [Unit Tests](unit-tests.md)
-- [Translation Process](translation_process.md)
+- [OSX Build Notes](doc/build-osx.md)
+- [Windows Build Notes](doc/build-msw.md)
+- [Coding Guidelines](doc/coding.md)
+- [Release Process](doc/release-process.md)
+- [Release Notes](doc/release-notes.md)
+- [Multiwallet Qt Development](doc/multiwallet-qt.md)
+- [Unit Tests](doc/unit-tests.md)
+- [Translation Process](doc/translation_process.md)
