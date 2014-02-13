@@ -24,7 +24,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
-    ui->payTo->setPlaceholderText(tr("Enter a Qubit address (e.g. 7NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+    ui->payTo->setPlaceholderText(tr("Enter a QubitCoin address (e.g. GcFfATXk6NT6pDJbK8DYMUzKshE2NePU1Z)"));
 #endif
     setFocusPolicy(Qt::TabFocus);
     setFocusProxy(ui->payTo);
