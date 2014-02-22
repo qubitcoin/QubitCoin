@@ -1,4 +1,4 @@
-QubitCoin 0.8.4 BETA
+QubitCoin 0.8.4.1 BETA
 ====================
 
 Copyright (c) 2009-2013 Bitcoin Developers
