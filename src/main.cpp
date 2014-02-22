@@ -1293,9 +1293,9 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         if (fTestNet) {
                 if (pindexLast->nHeight+1 >= 10) { DiffMode = 2; }
         }
-        else {
-                if (pindexLast->nHeight+1 >= 120960) { DiffMode = 2; } // After x2 change diff algo to Kimoto
-        }
+        //else {
+        //        if (pindexLast->nHeight+1 >= 120960) { DiffMode = 2; } // After x2 change diff algo to Kimoto
+        //}
 
         if (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); }
         else if (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); }
