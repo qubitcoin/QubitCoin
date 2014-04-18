@@ -19,7 +19,7 @@ CONFIG += thread
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
 
-BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
+win32:BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
 win32:BOOST_INCLUDE_PATH="C:\desp\boost_1_55_0"
 win32:BOOST_LIB_PATH="C:\desp\boost_1_55_0\stage\lib"
 win32:BDB_INCLUDE_PATH="C:\desp\db-4.8.30.NC\build_unix"
